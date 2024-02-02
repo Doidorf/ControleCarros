@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Listagem de Carros";
+}
+
+<div class="text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Carros" asp-action="Criar">Adicionar novo carro</a>
+    </div>
+    <br/>
+    <h1 class="display-4">Listagem de Carros</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fabricante</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Ano do modelo</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Dia de semana</th>
+                <th scope="col">Final de semana</th>
+                <th scope="col">Dia de semana (Fidelidade)</th>
+                <th scope="col">Final de semana (Fidelidade)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Ford</td>
+                <td>Ka</td>
+                <td>2022</td>
+                <td>1</td>
+                <td>R$:130,00</td>
+                <td>R$:120,00</td>
+                <td>R$:100,00</td>
+                <td>R$:90,00</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Toyota</td>
+                <td>Yaris</td>
+                <td>2023</td>
+                <td>2</td>
+                <td>R$:120,00</td>
+                <td>R$:120,00</td>
+                <td>R$:110,00</td>
+                <td>R$:100,00</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Volkswagem</td>
+                <td>Virtus</td>
+                <td>2022</td>
+                <td>3</td>
+                <td>R$:140,00</td>
+                <td>R$:110,00</td>
+                <td>R$:120,00</td>
+                <td>R$:80,00</td>
+                <td>
+            <tr>
+                <th scope="row">2</th>
+                <td>Fiat</td>
+                <td>Doblo</td>
+                <td>2015</td>
+                <td>4</td>
+                <td>R$:150,00</td>
+                <td>R$:100,00</td>
+                <td>R$:130,00</td>
+                <td>R$:110,00</td>
+                <td>
+                </td>
+            <tr>
+                <th scope="row">2</th>
+                <td>Toyota</td>
+                <td>Hilux</td>
+                <td>2020</td>
+                <td>5</td>
+                <td>R$:130,00</td>
+                <td>R$:100,00</td>
+                <td>R$:130,00</td>
+                <td>R$:80,00</td>
+                <td>
+                </td>
+            </tr>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Carros" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Carros" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+        </tbody>
+    </table>
+</div>
